@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "terkep.zeg.hu tooltip extension",
+  "version": "1.0",
+  "description": "Show tooltip on terkep.zeg.hu map",
+  "permissions": ["webRequest", "scripting"],
+  "host_permissions": [
+    "*://terkep.zeg.hu/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://terkep.zeg.hu/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
