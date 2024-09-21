@@ -3,17 +3,26 @@
   "name": "terkep.zeg.hu tooltip extension",
   "version": "1.0",
   "description": "Show tooltip on terkep.zeg.hu map",
-  "permissions": ["webRequest", "scripting"],
+  "permissions": [
+    "webRequest",
+    "scripting"
+  ],
   "host_permissions": [
-    "*://terkep.zeg.hu/*"
+    "*://terkep.zeg.hu/*",
+    "*://terkep.zalaegerszeg.hu/*"
   ],
   "background": {
     "service_worker": "background.js"
   },
   "content_scripts": [
     {
-      "matches": ["*://terkep.zeg.hu/*"],
-      "js": ["content.js"]
+      "matches": [
+        "*://terkep.zeg.hu/*",
+        "*://terkep.zalaegerszeg.hu/*"
+      ],
+      "js": [
+        "content.js"
+      ]
     }
   ]
 }
