@@ -1,14 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "terkep.zeg.hu tooltip extension",
+  "name": "terkep.zalaegerszeg.hu object area tooltip",
   "version": "1.0",
-  "description": "Show tooltip on terkep.zeg.hu map",
+  "description": "Display an object area tooltip on http://terkep.zalaegerszeg.hu/mapguide/zalaegerszeg/internet.php map when you select an object",
   "permissions": [
     "webRequest",
     "scripting"
   ],
   "host_permissions": [
-    "*://terkep.zeg.hu/*",
     "*://terkep.zalaegerszeg.hu/*"
   ],
   "background": {
@@ -17,7 +16,6 @@
   "content_scripts": [
     {
       "matches": [
-        "*://terkep.zeg.hu/*",
         "*://terkep.zalaegerszeg.hu/*"
       ],
       "js": [
