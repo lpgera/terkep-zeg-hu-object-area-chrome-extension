@@ -4,8 +4,7 @@
   "version": "1.0",
   "description": "Display an object area tooltip on http://terkep.zalaegerszeg.hu/mapguide/zalaegerszeg/internet.php map when you select an object",
   "permissions": [
-    "webRequest",
-    "scripting"
+    "webRequest"
   ],
   "host_permissions": [
     "*://terkep.zalaegerszeg.hu/*"
